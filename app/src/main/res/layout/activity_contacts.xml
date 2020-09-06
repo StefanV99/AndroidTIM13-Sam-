@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aleksandar.tendjer.chatapplication.ContactsActivity"
+    android:weightSum="10"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/my_cht_list"
+        android:layout_width="136dp"
+        android:layout_height="47dp"
+        android:layout_alignBottom="@+id/LogoutBtn"
+        android:layout_toEndOf="@+id/RefreshBtn"
+        android:text="@string/my_cht_list"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/RefreshBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/logoutString" />
+
+    <Button
+        android:id="@+id/RefreshBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/Rfrsh"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/LogoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>
+
+
