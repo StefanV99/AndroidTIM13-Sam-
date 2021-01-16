@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/newMessage"
+        android:orderInCategory="100"
+        android:title="add_new"
+        android:icon="@mipmap/add_new_round"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/filter"
+        android:orderInCategory="100"
+        android:title="filter"
+        android:icon="@mipmap/filter_round"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+</menu>

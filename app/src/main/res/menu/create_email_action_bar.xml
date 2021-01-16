@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/create_message_back"
+        android:checkable="true"
+        android:icon="@drawable/abc_vector_test"
+        android:orderInCategory="100"
+        android:title="back"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/create_message_send"
+        android:icon="@drawable/accept"
+        android:orderInCategory="200"
+        android:title="send"
+        android:visible="true"
+        app:showAsAction="always" />
+
+</menu>

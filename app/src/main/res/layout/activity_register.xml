@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:visibility="visible"
+            app:navigationIcon="@drawable/abc_vector_test"
+            tools:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="432dp"
+            android:layout_weight="3">
+
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="8"
+                android:hint="@string/usernameRegister"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/registerPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditFirst"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="84dp"
+                android:ems="7"
+                android:hint="@string/Password1"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/registerPop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/registerSmtp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="-76dp"
+                android:ems="7"
+                android:hint="@string/registerPop3"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/registerSmtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="24dp"
+                android:ems="7"
+                android:hint="@string/registerSmtp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="252dp"
+                android:text="@string/registerStr"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

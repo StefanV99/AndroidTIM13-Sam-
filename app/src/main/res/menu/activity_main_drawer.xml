@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/top_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            app:srcCompat="@android:drawable/ic_menu_today"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_acmcount"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_contacts"
+            app:srcCompat="@drawable/contacts_background"
+            android:title="@string/menu_contacts" />
+        <item
+            android:id="@+id/nav_folders"
+            app:srcCompat="@android:drawable/ic_menu_upload"
+            android:title="@string/menu_Folders" />
+        <item
+            android:id="@+id/nav_rules"
+            app:srcCompat="@android:drawable/ic_menu_upload"
+            android:title="@string/menu_rules" />
+        <item
+            android:id="@+id/nav_tags"
+            app:srcCompat="@android:drawable/ic_menu_upload"
+            android:title="@string/menu_tags" />
+    </group>
+    <group  android:id="@+id/bottom_group"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_Settings" />
+        <item
+            android:id="@+id/action_sign_out"
+            android:icon="@mipmap/sign_out_round"
+            android:title="@string/logout" />
+    </group>
+
+</menu>
